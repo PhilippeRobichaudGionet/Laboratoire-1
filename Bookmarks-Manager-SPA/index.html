@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bookmark-star.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Laboratoire 1</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <img src="bookmark-star.svg" class="appLogo" alt="" title="Gestionnaire des favoris">
+            <h4 id="actionTitle"></h4>
+            <i class="cmdIcon fa fa-plus" id="createBookmark" title="Ajouter un contact"></i>
+            <i class="cmdIcon fa fa-times" id="abort" title="Annuler"></i>
+            <div class="dropdown ms-auto" id="DDMenu">
+                <div data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="cmdIcon fa fa-ellipsis-vertical"></i>
+                </div>
+                <div class="dropdown-menu noselect">
+                    <i class="fa-solid fa-check" hidden></i>
+                    <div class="dropdown-item" id="loginCmd">Toutes les catégories</div>
+                    <div class="dropdown-divider"></div>
+                    <div class="dropdown-item" id="loginCmd">Cegep</div>
+                    <div class="dropdown-item" id="loginCmd">Cloud</div>
+                    <div class="dropdown-item" id="loginCmd">Météo</div>
+                    <div class="dropdown-item" id="loginCmd">Nouvelles</div>
+                    <div class="dropdown-item" id="loginCmd">Réseaux sociaux</div>
+                    <div class="dropdown-item" id="loginCmd">Streaming</div>
+                    <div class="dropdown-item" id="loginCmd">Université</div>
+                    <div class="dropdown-item" id="aboutCmd">
+                        <i class="menuIcon fa fa-info-circle mx-2"></i> À propos...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content"> </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+    <script src="JS/API_Bookmarks.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/siteUI.js"></script>
+</body>
+
+</html>
